@@ -27,6 +27,6 @@ export async function savePaciente(paciente){
         body: JSON.stringify(paciente)
       };
       
-      const response = await fetch('http://localhost:8080/pacientes', options);
+      const response = await fetch(API_URL, options);
       return await response.text();    
 }
